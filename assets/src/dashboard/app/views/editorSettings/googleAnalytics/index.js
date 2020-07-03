@@ -79,7 +79,9 @@ function GoogleAnalyticsSettings() {
         <TextInput
           label={TEXT.ariaDescription}
           id="gaTrackingId"
-          value=""
+          value={analyticsId}
+          onEditCancel={handleCancelUpdateId}
+          onEditComplete={handleCompleteUpdateId}
           placeholder={TEXT.placeholder}
         />
         <TextInputHelperText>{TEXT.context}</TextInputHelperText>
